@@ -78,6 +78,23 @@
   }
 
 
+  #productsSmall {
+    border-left: 2px solid black;
+  }
+  #productsMedium {
+    border-left: 2px solid black;
+  }
+  #productsLarge {
+    border-left: 2px solid black;
+  }
+  #productsXLarge {
+    border-left: 2px solid black;
+  }
+  #productsXXLarge {
+    border-left: 2px solid black;
+  }
+
+
   #sortBy {
     padding-left: 30px;
     margin-right: 100px;

@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/bootstrap.css" />
   <link rel="shortcut icon" type="image/png" href="image/logo.png" />
+  <script src="js/store.js"></script>
 </head>
 
 <body>
@@ -84,27 +85,27 @@
         <div id="sizeFilter">
           <h5>Choose your Size</h5>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+            <input class="checkoption" type="checkbox" id="inlineCheckbox1" disabled>
             <label class="form-check-label" for="inlineCheckbox1">XS</label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+            <input class="checkoption" type="checkbox" id="small" onclick="small()">
             <label class="form-check-label" for="inlineCheckbox1">S</label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+            <input class="checkoption" type="checkbox" id="medium" onclick="medium()">
             <label class="form-check-label" for="inlineCheckbox1">M</label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+            <input class="checkoption" type="checkbox" id="large" onclick="large()">
             <label class="form-check-label" for="inlineCheckbox1">L</label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+            <input class="checkoption" type="checkbox" id="xLarge" onclick="xlarge()">
             <label class="form-check-label" for="inlineCheckbox1">XL</label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+            <input class="checkoption" type="checkbox" id="xxLarge" onclick="xxlarge()">
             <label class="form-check-label" for="inlineCheckbox1">XXL</label>
           </div>
         </div>
@@ -258,7 +259,7 @@
               </div>
               <div class="prodDetails">
                 <h5>Bart Simpson Hoodie</h5>
-                <p>3XL</p>
+                <p>2XL</p>
               </div>
               <div class="prodDetails">
                 <p>&euro;50</p>
@@ -285,60 +286,245 @@
             </div>
           </div>
           <div class="col-sm-4">
-          <div class="card" style="border: none">
-            <div class="card-body">
-              <a href="product6.html">
-                <img src="/image/Products/prod6/1.webp" class="card-img-top" alt="Aerial Image of the Red Tower." />
+            <div class="card" style="border: none">
+              <div class="card-body">
+                <a href="product6.html">
+                  <img src="/image/Products/prod6/1.webp" class="card-img-top" alt="Aerial Image of the Red Tower." />
+              </div>
+              <div class="prodDetails">
+                <h5>Boxy Cream Lace Top w/ Crochet Trim</h5>
+                <p>M</p>
+              </div>
+              <div class="prodDetails">
+                <p>&euro;35</p>
+              </div>
             </div>
-            <div class="prodDetails">
-              <h5>Boxy Cream Lace Top w/ Crochet Trim</h5>
-              <p>M</p>
-            </div>
-            <div class="prodDetails">
-              <p>&euro;35</p>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div id="productsSmall" style="display: none;">
+        <div class="storeRow">
+
+
+          <div class="col-sm-4">
+            <div class="card" style="border: none">
+              <div class="card-body">
+                <a href="product3.html">
+                  <img src="/image/Products/prod3/1.webp" class="card-img-top" alt="Aerial Image of the Red Tower." />
+              </div>
+              <div class="prodDetails">
+                <h5>Octopus A line t-shirt dress</h5>
+                <p>S</p>
+              </div>
+              <div class="prodDetails">
+                <p>&euro;30</p>
+              </div>
             </div>
           </div>
           </a>
 
+          <div class="col-sm-4">
+            <div class="card" style="border: none">
+              <div class="card-body">
+                <a href="product9.html">
+                  <img src="/image/Products/prod9/1.webp" class="card-img-top" alt="Aerial Image of the Red Tower." />
+              </div>
+              <div class="prodDetails">
+                <h5>Money exchange Nike hoodie</h5>
+                <p>S</p>
+              </div>
+              <div class="prodDetails">
+                <p>&euro;45</p>
+              </div>
+            </div>
+            </a>
+          </div>
 
+          <div class="col-sm-4">
+
+            <div class="card" style="border: none">
+              <div class="card-body">
+                <a href="product8.html">
+                  <img src="/image/Products/prod8/1.webp" class="card-img-top" alt="Aerial Image of the Red Tower." />
+              </div>
+              <div class="prodDetails">
+                <h5>
+                  Tea Stained Cream Crochet Festival Tank Top</h5>
+                <p>S</p>
+              </div>
+              <div class="prodDetails">
+                <p>&euro;30</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="productsMedium" style="display: none;">
+        <div class="storeRow">
+          <div class="col-sm-4">
+
+            <div class="card" style="border: none">
+              <div class="card-body">
+                <a href="product2.html">
+                  <img src="/image/Products/prod2/1.webp" class="card-img-top" alt="Aerial Image of the Red Tower." />
+              </div>
+              <div class="prodDetails">
+                <h5>Yellow Tie-dyed Babydoll Crop Top</h5>
+                <p>M</p>
+              </div>
+              <div class="prodDetails">
+                <p>&euro;32</p>
+              </div>
+            </div>
+            </a>
+          </div>
+
+
+
+          <div class="col-sm-4">
+            <div class="card" style="border: none">
+              <div class="card-body">
+                <a href="product6.html">
+                  <img src="/image/Products/prod6/1.webp" class="card-img-top" alt="Aerial Image of the Red Tower." />
+              </div>
+              <div class="prodDetails">
+                <h5>Boxy Cream Lace Top w/ Crochet Trim</h5>
+                <p>M</p>
+              </div>
+              <div class="prodDetails">
+                <p>&euro;35</p>
+              </div>
+            </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div id="productsLarge" style="display: none;">
+
+        <div class="storeRow">
+          <div class="col-sm-4">
+
+            <div class="card" style="border: none">
+              <div class="card-body">
+                <a href="product4.html">
+                  <img src="/image/Products/prod4/1.webp" class="card-img-top" alt="Aerial Image of the Red Tower." />
+              </div>
+              <div class="prodDetails">
+                <h5>Take Me To The Ocean upcycled denim & lace Jacket</h5>
+                <p>L</p>
+              </div>
+              <div class="prodDetails">
+                <p>&euro;40</p>
+              </div>
+            </div>
+            </a>
+          </div>
+
+          <div class="col-sm-4">
+
+            <div class="card" style="border: none">
+              <div class="card-body">
+                <a href="product5.html">
+                  <img src="/image/Products/prod5/1.webp" class="card-img-top" alt="Aerial Image of the Red Tower." />
+              </div>
+              <div class="prodDetails">
+                <h5>Skull & Flowers Frida Kahlo</h5>
+                <p>L</p>
+              </div>
+              <div class="prodDetails">
+                <p>&euro;45</p>
+              </div>
+            </div>
+            </a>
+          </div>
 
         </div>
       </div>
 
+      <div id="productsXLarge" style="display: none;">
+        <div class="storeRow">
+          <div class="col-sm-4">
+
+            <div class="card" style="border: none">
+              <a href="product1.html">
+                <div class="card-body">
+                  <img src="/image/Products/prod1/1.webp" class="card-img-top" alt="Aerial Image of the Red Tower." />
+                </div>
+                <div class="prodDetails">
+                  <h5>
+                    Vintage Nike Reworked Cityscape Skyline Split Tee</h5>
+                  <p>XL</p>
+                </div>
+                <div class="prodDetails">
+                  <p>&euro;30</p>
+                </div>
+            </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div id="productsXXLarge" style="display: none;">
+        <div class="storeRow">
+          <div class="col-sm-4">
+
+            <div class="card" style="border: none">
+              <div class="card-body">
+                <a href="product7.html">
+                  <img src="/image/Products/prod7/1.webp" class="card-img-top" alt="Aerial Image of the Red Tower." />
+              </div>
+              <div class="prodDetails">
+                <h5>Bart Simpson Hoodie</h5>
+                <p>2XL</p>
+              </div>
+              <div class="prodDetails">
+                <p>&euro;50</p>
+              </div>
+            </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+
     </div>
-  </div>
-  <div class="footer">
-    <div class="col-1">
-      <img src="image/logo.png" alt="" />
-      <h3>Revamp your style sustainably</h3>
-    </div>
-    <div class="col-2">
-      <h3>Visit our Store</h3>
-      <p>Thrifty Threads,<br />San Gwann<br />Malta</p>
-      <p>+356 21663226</p>
-      <a href="https://www.instagram.com/thrifty_threads.mt/" target="_blank"><ion-icon size="large"
-          name="logo-instagram"></ion-icon></a>
-          <a href="https://www.facebook.com/TThreadsMT/" target="_blank"><ion-icon size="large"
+    <div class="footer">
+      <div class="col-1">
+        <img src="image/logo.png" alt="" />
+        <h3>Revamp your style sustainably</h3>
+      </div>
+      <div class="col-2">
+        <h3>Visit our Store</h3>
+        <p>Thrifty Threads,<br />San Gwann<br />Malta</p>
+        <p>+356 21663226</p>
+        <a href="https://www.instagram.com/thrifty_threads.mt/" target="_blank"><ion-icon size="large"
+            name="logo-instagram"></ion-icon></a>
+        <a href="https://www.facebook.com/TThreadsMT/" target="_blank"><ion-icon size="large"
             name="logo-facebook"></ion-icon></a>
-      <a href="contactUs.html"><ion-icon size="large" name="mail-outline"></ion-icon></a>
+        <a href="contactUs.html"><ion-icon size="large" name="mail-outline"></ion-icon></a>
+      </div>
+      <div class="col-3">
+        <h3>Newsletter</h3>
+        <form>
+          <input type="email" placeholder="Your Email Address here..." />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
     </div>
-    <div class="col-3">
-      <h3>Newsletter</h3>
-      <form>
-        <input type="email" placeholder="Your Email Address here..." />
-        <button type="submit">Subscribe</button>
-      </form>
-    </div>
-  </div>
 
 
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
-  <script src="/jQuery/lightbox2-dev/dist/js/lightbox-plus-jquery.js"></script>
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"></script>
+    <script src="/jQuery/lightbox2-dev/dist/js/lightbox-plus-jquery.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
