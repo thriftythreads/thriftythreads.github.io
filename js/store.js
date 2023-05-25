@@ -82,3 +82,54 @@ function small() {
       xxlargeProd.style.display="none";
     }
   }
+
+  function CB2030() {
+    // Get the checkbox
+    var checkBox = document.getElementById("2030CB");
+    // Get the output text
+    var allProd = document.getElementById("products");
+    var CB2030 = document.getElementById("products2030");
+  
+    // If the checkbox is checked, display the output text
+    if (checkBox.checked == true){
+      CB2030.style.display = "block";
+      allProd.style.display = "none";
+    } else {
+      allProd.style.display = "block";
+      CB2030.style.display="none";
+    }
+  }
+
+  function CB3040() {
+    // Get the checkbox
+    var checkBox = document.getElementById("3040CB");
+    // Get the output text
+    var allProd = document.getElementById("products");
+    var CB3040 = document.getElementById("products3040");
+  
+    // If the checkbox is checked, display the output text
+    if (checkBox.checked == true){
+      CB3040.style.display = "block";
+      allProd.style.display = "none";
+    } else {
+      allProd.style.display = "block";
+      CB3040.style.display="none";
+    }
+  }
+
+  function CB5060() {
+    // Get the checkbox
+    var checkBox = document.getElementById("5060CB");
+    // Get the output text
+    var allProd = document.getElementById("products");
+    var CB5060 = document.getElementById("products5060");
+  
+    // If the checkbox is checked, display the output text
+    if (checkBox.checked == true){
+      CB5060.style.display = "block";
+      allProd.style.display = "none";
+    } else {
+      allProd.style.display = "block";
+      CB5060.style.display="none";
+    }
+  }
